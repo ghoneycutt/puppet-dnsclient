@@ -1,0 +1,3 @@
+manages /etc/resolv.conf
+
+$nameservers and $dnssearchpath are specified in the site manifest
