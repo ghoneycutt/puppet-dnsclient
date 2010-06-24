@@ -1,3 +1,5 @@
-manages /etc/resolv.conf
+dnsclient
 
-$nameservers and $dnssearchpath are specified in the site manifest
+This is the dnsclient module that manages /etc/resolv.conf
+
+Released 20100624 - Garrett Honeycutt - GPLv2
