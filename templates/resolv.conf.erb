@@ -1,8 +1,15 @@
 # This file is being maintained by Puppet.
 # DO NOT EDIT
 
+<% if ! [:undef, ''].include?(dnssearchpath) -%>
 search <%= dnssearchpath %>
-options ndots:2 timeout:3
+<% end -%>
+<% if ! [:undef, ''].include?(dnsclientoptions) -%>
+options <%= dnsclientoptions %>
+<% end -%>
+<% if ! [:undef, ''].include?(dnsclientsortlist) -%>
+sortlist <%= dnsclientsortlist %>
+<% end -%>
 <% nameservers.each do |nameserver| -%>
 nameserver <%= nameserver %>
 <% end -%>

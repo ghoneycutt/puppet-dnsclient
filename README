@@ -2,7 +2,10 @@ dnsclient
 
 This is the dnsclient module that manages /etc/resolv.conf
 
+Requires: The class common::data exists.
 
-Requires: $nameservers and $dnssearchpath which should be set in the site manifest
+You can also specify a search list, sortlist, and options with $dnssearchpath,
+$dnsclientsortlist, and $dnsclientoptions, respectively
 
-See http://github.com/ghoneycutt/puppet-sitemanifest for examples
+See http://puppetlabs.com/blog/design-pattern-for-dealing-with-data/
+
