@@ -1,0 +1,4 @@
+---
+dnsclient_options:
+  - debug
+  - ndots:2

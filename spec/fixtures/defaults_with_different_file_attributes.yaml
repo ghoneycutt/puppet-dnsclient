@@ -1,0 +1,5 @@
+---
+dnsclient_resolver_config_file: /tmp/etc/resolv.conf
+dnsclient_resolver_config_file_owner: gh
+dnsclient_resolver_config_file_group: gh
+dnsclient_resolver_config_file_mode: !str 0600

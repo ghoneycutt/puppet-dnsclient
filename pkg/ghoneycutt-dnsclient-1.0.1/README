@@ -1,8 +1,0 @@
-dnsclient
-
-This is the dnsclient module that manages /etc/resolv.conf
-
-
-Requires: $nameservers and $dnssearchpath which should be set in the site manifest
-
-See http://github.com/ghoneycutt/puppet-sitemanifest for examples

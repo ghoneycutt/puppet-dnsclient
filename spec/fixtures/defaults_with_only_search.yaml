@@ -1,0 +1,4 @@
+---
+dnsclient_search:
+  - one.example.com
+  - two.example.com

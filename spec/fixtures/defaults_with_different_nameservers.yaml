@@ -1,0 +1,4 @@
+---
+dnsclient_nameservers:
+  - 4.2.2.1
+  - 4.2.2.2

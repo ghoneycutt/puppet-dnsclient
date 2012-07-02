@@ -1,15 +1,17 @@
 # This file is being maintained by Puppet.
 # DO NOT EDIT
-
-<% if ! [:undef, ''].include?(dnssearchpath) -%>
-search <%= dnssearchpath %>
+<% if search[0] != 'UNSET' %>
+search<% search.each do |search_domain| %> <%= search_domain %><% end -%>
 <% end -%>
-<% if ! [:undef, ''].include?(dnsclientoptions) -%>
-options <%= dnsclientoptions %>
+<% if sortlist[0] != 'UNSET' %>
+sortlist<% sortlist.each do |sortlist_address| %> <%= sortlist_address%><% end -%>
 <% end -%>
-<% if ! [:undef, ''].include?(dnsclientsortlist) -%>
-sortlist <%= dnsclientsortlist %>
-<% end -%>
+<% if domain != 'UNSET' and search[0] == 'UNSET' %>
+domain <%= domain %>
+<% end %>
+<% if options[0] != 'UNSET' %>
+options<% options.each do |option| %> <%= option %><% end -%>
+<% end %>
 <% nameservers.each do |nameserver| -%>
 nameserver <%= nameserver %>
 <% end -%>
