@@ -1,8 +1,0 @@
-# This file is being maintained by Puppet.
-# DO NOT EDIT
-
-search <%= dnssearchpath %>
-options ndots:2 timeout:3
-<% nameservers.each do |nameserver| -%>
-nameserver <%= nameserver %>
-<% end -%>
