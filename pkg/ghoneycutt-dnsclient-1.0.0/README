@@ -1,5 +1,0 @@
-dnsclient
-
-This is the dnsclient module that manages /etc/resolv.conf
-
-Released 20100624 - Garrett Honeycutt - GPLv2
