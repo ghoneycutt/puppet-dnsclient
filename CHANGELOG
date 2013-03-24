@@ -1,3 +1,7 @@
+3.0.1 - 2013-03-16 Garrett Honeycutt <code@garretthoneycutt.com>
+* fixed spec bug relating to lack of .fixtures.yml
+* cleaned up testing framework
+
 3.0.0 - 2013-03-16 Garrett Honeycutt <code@garretthoneycutt.com>
 * Switched to semantic versioning - http://semver.org
 * Implemented new design pattern that manages data with Hiera
