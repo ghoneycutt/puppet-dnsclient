@@ -1,25 +1,24 @@
 language: ruby
 before_script: "gem install --no-ri --no-rdoc bundler"
-after_script:
 script:
-  - "rake spec"
+- "rake spec"
 after_success:
-  - git clone -q git://github.com/puppetlabs/ghpublisher.git .forge-releng
-  - .forge-releng/publish
+- git clone -q git://github.com/puppetlabs/ghpublisher.git .forge-releng
+- .forge-releng/publish
 notifications:
-  email: false
+email: false
 rvm:
-  - 1.9.3
-  - 1.8.7
+- 1.9.3
+- 1.8.7
 env:
   - PUPPET_VERSION=2.6.9
   - PUPPET_VERSION=2.7.13
   - PUPPET_VERSION=3.1.1
-  global:
-    - PUBLISHER_LOGIN=ghoneycutt
-    - secure: "nLMFst0kjDNa73TkqrnB3z45dNakjHa8Kkwz/2shlHDgc9ff8BslTVzQeskK\n6/8HEYhlsvXCAjE+I7mbEO4njTmaX1+lzCKDbOtqmBYd7g8gHftMEGnagHlQ\nY+rlOj1VARH15+zPZ3nBkpzYJLteKTBNSAaGUe2cTKzuBUmsD0o="
+global:
+- PUBLISHER_LOGIN=ghoneycutt
+- secure: "nLMFst0kjDNa73TkqrnB3z45dNakjHa8Kkwz/2shlHDgc9ff8BslTVzQeskK\n6/8HEYhlsvXCAjE+I7mbEO4njTmaX1+lzCKDbOtqmBYd7g8gHftMEGnagHlQ\nY+rlOj1VARH15+zPZ3nBkpzYJLteKTBNSAaGUe2cTKzuBUmsD0o="
 gemfile: .gemfile
 matrix:
   allow_failures:
-    - rvm: 1.9.3
-    - env: PUPPET_VERSION=2.6.9
+  - rvm: 1.9.3
+  - PUPPET_VERSION=2.6.9
