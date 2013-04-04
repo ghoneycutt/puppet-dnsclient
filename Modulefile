@@ -1,5 +1,5 @@
 name    'ghoneycutt-dnsclient'
-version '3.0.1'
+version '3.1.0'
 source 'git://github.com/ghoneycutt/puppet-dnsclient.git'
 author 'ghoneycutt'
 license 'Apache License, Version 2.0'
