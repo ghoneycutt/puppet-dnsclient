@@ -1,7 +1,7 @@
 # dnsclient module #
 
 [![Build Status](
-https://api.travis-ci.org/ghoneycutt/puppet-dnsclient.png)](https://travis-ci.org/ghoneycutt/puppet-dnsclient)
+https://api.travis-ci.org/ghoneycutt/puppet-dnsclient.png?branch=master)](https://travis-ci.org/ghoneycutt/puppet-dnsclient)
 
 This module manages /etc/resolv.conf and its various options.
 
