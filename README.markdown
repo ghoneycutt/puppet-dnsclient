@@ -13,8 +13,8 @@ code with no modifications to the module itself as a guiding principle.
 
 This module has been tested to work on the following systems.
 
- * CentOS 5
- * CentOS 6
+ * EL 5
+ * EL 6
  * Debian 6
  * SLES 11
  * Solaris 10
