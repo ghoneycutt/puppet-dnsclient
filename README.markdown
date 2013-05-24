@@ -16,6 +16,7 @@ This module has been tested to work on the following systems.
  * CentOS 5
  * CentOS 6
  * Debian 6
+ * SLES 10
  * SLES 11
  * Solaris 10
  * Ubuntu 10.04 LTS (Lucid Lynx)
